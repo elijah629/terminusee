@@ -19,9 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} dark antialiased`}
+        className={`${inter.className} flex flex-col dark h-screen antialiased`}
       >
-        {children}
+        <main className="flex-1">{children}</main>
+        <footer className="border-t p-2">In COD we trust, made by @elijah629.</footer>
       </body>
     </html>
   );
